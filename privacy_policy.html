@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShareLingo 개인정보처리방침</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans KR', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e9ecef;
+        }
+
+        .app-name {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .title {
+            font-size: 1.8rem;
+            color: #495057;
+            margin-bottom: 10px;
+        }
+
+        .effective-date {
+            font-size: 1rem;
+            color: #6c757d;
+            background-color: #f8f9fa;
+            padding: 8px 16px;
+            border-radius: 20px;
+            display: inline-block;
+        }
+
+        .intro {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #007bff;
+        }
+
+        .article {
+            margin-bottom: 30px;
+        }
+
+        .article-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .article-content {
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        .article-content p {
+            margin-bottom: 12px;
+        }
+
+        .purpose-list {
+            background-color: #e8f5e8;
+            border: 1px solid #c3e6c3;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+
+        .purpose-list ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .purpose-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #c3e6c3;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .purpose-list li:last-child {
+            border-bottom: none;
+        }
+
+        .purpose-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            top: 8px;
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        .data-info {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+
+        .data-info h4 {
+            color: #856404;
+            margin-bottom: 10px;
+        }
+
+        .security-info {
+            background-color: #d1ecf1;
+            border: 1px solid #bee5eb;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+
+        .security-info h4 {
+            color: #0c5460;
+            margin-bottom: 10px;
+        }
+
+        .security-info ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .security-info li {
+            padding: 5px 0;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .security-info li:before {
+            content: "🔒";
+            position: absolute;
+            left: 0;
+            top: 5px;
+        }
+
+        .contact-info {
+            background-color: #e3f2fd;
+            border: 1px solid #bbdefb;
+            border-radius: 6px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .contact-info h4 {
+            color: #1976d2;
+            margin-bottom: 10px;
+        }
+
+        .contact-info p {
+            margin-bottom: 8px;
+        }
+
+        .rights-info {
+            background-color: #f3e5f5;
+            border: 1px solid #e1bee7;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+
+        .rights-info h4 {
+            color: #7b1fa2;
+            margin-bottom: 10px;
+        }
+
+        .external-links {
+            background-color: #fff8e1;
+            border: 1px solid #ffecb3;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+
+        .external-links h4 {
+            color: #f57f17;
+            margin-bottom: 10px;
+        }
+
+        .external-links ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .external-links li {
+            padding: 5px 0;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .external-links li:before {
+            content: "📞";
+            position: absolute;
+            left: 0;
+            top: 5px;
+        }
+
+        .transfer-info {
+            background-color: #fce4ec;
+            border: 1px solid #f8bbd9;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+
+        .transfer-info h4 {
+            color: #ad1457;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #e9ecef;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+
+        .footer-note {
+            background-color: #e8f5e8;
+            border: 1px solid #c3e6c3;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .footer-note p {
+            margin: 0;
+            font-size: 1.1rem;
+            color: #155724;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+                border-radius: 0;
+            }
+
+            .app-name {
+                font-size: 2rem;
+            }
+
+            .title {
+                font-size: 1.5rem;
+            }
+
+            .article-title {
+                font-size: 1.2rem;
+            }
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        .important {
+            color: #dc3545;
+            font-weight: 600;
+        }
+
+        .required {
+            color: #28a745;
+            font-weight: 600;
+        }
+
+        .optional {
+            color: #6c757d;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="app-name">ShareLingo</h1>
+            <h2 class="title">개인정보처리방침</h2>
+            <div class="effective-date">시행일자: 2025년 6월 11일</div>
+        </div>
+
+        <div class="intro">
+            본 앱(이하 "서비스")은 <strong>「개인정보 보호법」 제30조</strong>에 따라 정보주체의 개인정보를 보호하고 이와 관련한 고충을 신속하고 원활하게 처리할 수 있도록 하기 위하여 본 개인정보처리방침을 수립·공개합니다.
+        </div>
+
+        <div class="article">
+            <h3 class="article-title">제1조 (개인정보의 처리 목적)</h3>
+            <div class="article-content">
+                <p>본 서비스는 다음의 목적을 위하여 개인정보를 처리합니다. 처리하는 개인정보는 아래의 목적 외에는 사용되지 않으며, 목적이 변경되는 경우 <span class="highlight">「개인정보 보호법」에 따라 별도의 동의</span>를 받습니다.</p>
+                <div class="purpose-list">
+                    <ul>
+                        <li>사용자 가입 및 인증 (Google OAuth)</li>
+                        <li>사용자 프로필 설정 및 관리</li>
+                        <li>게시물 작성, 이미지 업로드, 댓글 기능 제공</li>
+                        <li>사용자 간 상호작용 제공</li>
+                        <li>서비스 개선을 위한 통계 및 분석(Firebase Analytics)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="article">
+            <h3 class="article-title">제2조 (개인정보의 처리 및 보유 기간)</h3>
+            <div class="article-content">
+                <div class="data-info">
+                    <h4>📅 보유 기간</h4>
+                    <p>• 사용자의 계정이 유지되는 동안 개인정보를 보관하며, <span class="important">계정 삭제 시 모든 사용자 데이터는 자동으로 삭제</span>됩니다.</p>
+                    <p>• <strong>삭제 시점:</strong> 회원 탈퇴 즉시</p>
+                    <p>• <strong>보유 항목:</strong> 프로필 정보, 게시물, 이미지 등</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="article">
+            <h3 class="article-title">제3조 (처리하는 개인정보의 항목)</h3>
+            <div class="article-content">
+                <p><span class="required">필수항목:</span> 이름, 이메일, 위치(읍면동), 생년월일, 언어 설정(모국어/목표 언어)</p>
+                <p><span class="optional">선택항목:</span> 프로필 이미지, 자기소개, 취미</p>
+            </div>
+        </div>
+
+        <div class="article">
+            <h3 class="article-title">제4조 (개인정보의 파기 절차 및 방법)</h3>
+            <div class="article-content">
+                <p>서비스는 개인정보 보유기간이 경과하거나 처리 목적이 달성되었을 경우 <span class="important">지체 없이 해당 정보를 파기</span>합니다.</p>
+                <div class="data-info">
+                    <h4>🗑️ 파기 방법</h4>
+                    <p>• <strong>파기방법:</strong> 서버에서 영구 삭제 또는 Firestore 데이터 제거</p>
+                    <p>• <strong>자동화:</strong> Firebase Cloud Functions를 사용하여 계정 삭제 시 관련 정보 자동 삭제</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="article">
+            <h3 class="article-title">제5조 (정보주체의 권리·의무 및 행사방법)</h3>
+            <div class="article-content">
+                <p>이용자는 <span class="highlight">개인정보 열람, 수정, 삭제, 처리정지</span>를 요청할 수 있습니다. 요청은 이메일을 통해 접수받으며, 정당한 요청 시 지체 없이 처리합니다.</p>
+                <div class="contact-info">
+                    <h4>📧 요청 접수</h4>
+                    <p><strong>요청 이메일:</strong> contact@teamsparta.co</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="article">
+            <h3 class="article-title">제6조 (개인정보의 안전성 확보 조치)</h3>
+            <div class="article-content">
+                <div class="security-info">
+                    <h4>🔐 보안 조치</h4>
+                    <ul>
+                        <li>Firebase 인증 및 Firestore 보안 규칙을 통한 접근 제어</li>
+                        <li>클라우드 기능(Firebase Functions)을 활용한 서버 내 검증 처리</li>
+                        <li>앱 내 보안 이벤트 로깅 및 감사</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="article">
+            <h3 class="article-title">제7조 (자동 수집 장치의 설치·운영 및 그 거부)</h3>
+            <div class="article-content">
+                <p><span class="highlight">본 서비스는 쿠키 등 자동 수집 장치를 사용하지 않습니다.</span></p>
+            </div>
+        </div>
+
+        <div class="article">
+            <h3 class="article-title">제8조 (개인정보 보호책임자)</h3>
+            <div class="article-content">
+                <div class="contact-info">
+                    <h4>👥 개인정보 보호책임자</h4>
+                    <p><strong>책임자:</strong> flutter-fantastic-four Team</p>
+                    <p><strong>직책:</strong> 개발팀</p>
+                    <p><strong>연락처:</strong> contact@teamsparta.co</p>
+                </div>
+                <p>이용자는 개인정보 보호 관련 문의, 불만처리, 피해구제를 위 이메일을 통해 요청할 수 있으며, 서비스는 이에 대해 <span class="important">지체 없이 응답</span>하겠습니다.</p>
+            </div>
+        </div>
+
+        <div class="article">
+            <h3 class="article-title">제9조 (개인정보 열람청구 접수부서)</h3>
+            <div class="article-content">
+                <p>개인정보 열람 요청은 위 개인정보 보호책임자 이메일로 접수받습니다.</p>
+            </div>
+        </div>
+
+        <div class="article">
+            <h3 class="article-title">제10조 (권익침해 구제방법)</h3>
+            <div class="article-content">
+                <p>정보주체는 다음 기관에 개인정보 침해에 대한 피해구제, 상담 등을 문의하실 수 있습니다.</p>
+                <div class="external-links">
+                    <h4>🏛️ 관련 기관</h4>
+                    <ul>
+                        <li><strong>개인정보침해신고센터:</strong> 118 / privacy.kisa.or.kr</li>
+                        <li><strong>개인정보분쟁조정위원회:</strong> 1833-6972 / www.kopico.go.kr</li>
+                        <li><strong>대검찰청 사이버수사과:</strong> 1301 / www.spo.go.kr</li>
+                        <li><strong>경찰청 사이버수사국:</strong> 182 / ecrm.cyber.go.kr</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="article">
+            <h3 class="article-title">제11조 (개인정보처리방침 변경)</h3>
+            <div class="article-content">
+                <p>본 방침은 <strong>2025년 6월 11일</strong>부터 적용됩니다. 이후 변경사항이 있을 경우 본 페이지를 통해 고지합니다.</p>
+            </div>
+        </div>
+
+        <div class="article">
+            <h3 class="article-title">제12조 (처리하는 개인정보의 추가 항목 및 목적)</h3>
+            <div class="article-content">
+                <p>본 서비스는 이용자의 원활한 사용을 위하여 다음과 같은 개인정보 항목을 추가로 수집 및 처리할 수 있습니다.</p>
+                <div class="data-info">
+                    <h4>📱 추가 수집 항목</h4>
+                    <p>• <strong>단말기 정보:</strong> 기기 모델명, OS 정보, 고유 기기 식별자(예: UUID)</p>
+                    <p>• <strong>사진/미디어/파일 접근 권한:</strong> 게시글 작성 시 이미지 업로드 기능 제공을 위함</p>
+                </div>
+                <p><span class="important">※ 위 항목은 앱 기능 사용 시에 한해 수집되며, 사용자는 권한 허용 여부를 직접 선택할 수 있습니다.</span></p>
+            </div>
+        </div>
+
+        <div class="article">
+            <h3 class="article-title">제13조 (개인정보의 제3자 제공 및 위탁)</h3>
+            <div class="article-content">
+                <p>회사는 서비스 제공을 위하여 다음과 같이 개인정보 처리를 외부에 위탁할 수 있습니다.</p>
+                <div class="transfer-info">
+                    <h4>🤝 위탁 정보</h4>
+                    <p>• <strong>수탁업체:</strong> Google Firebase</p>
+                    <p>• <strong>위탁업무 내용:</strong> 사용자 인증, 데이터 저장(Firestore, Storage), 앱 오류 수집(Crashlytics)</p>
+                    <p>• <strong>보유 및 이용기간:</strong> 회원 탈퇴 시 혹은 위탁 계약 종료 시까지</p>
+                </div>
+                <p><span class="important">※ 위탁처는 해당 서비스 제공 외 다른 목적으로 개인정보를 사용하지 않으며, 계약에 따라 안전하게 관리됩니다.</span></p>
+            </div>
+        </div>
+
+        <div class="article">
+            <h3 class="article-title">제14조 (개인정보 국외 이전에 대한 정보)</h3>
+            <div class="article-content">
+                <p>회사는 다음과 같이 개인정보를 국외로 이전하고 있습니다.</p>
+                <div class="transfer-info">
+                    <h4>🌍 국외 이전 정보</h4>
+                    <p>• <strong>이전받는 자:</strong> Google LLC (미국)</p>
+                    <p>• <strong>이전 국가:</strong> 미국</p>
+                    <p>• <strong>이전 일시 및 방법:</strong> 서비스 이용 시 네트워크를 통한 실시간 전송</p>
+                    <p>• <strong>이전 목적:</strong> Firebase 기반 서비스 제공 및 데이터 백업</p>
+                    <p>• <strong>보유 및 이용기간:</strong> 회원 탈퇴 또는 서비스 종료 시까지</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="article">
+            <h3 class="article-title">제15조 (이용자의 권리 및 선택)</h3>
+            <div class="article-content">
+                <p>사용자는 언제든지 단말기의 설정을 통해 앱이 수집하는 개인정보 항목 중 일부 또는 전체를 차단할 수 있습니다. 단, 이로 인해 일부 서비스 이용에 제한이 발생할 수 있습니다.</p>
+                <div class="rights-info">
+                    <h4>⚙️ 권한 설정 예시</h4>
+                    <p><strong>예:</strong> 사진 접근 권한을 거부하면 이미지 업로드 기능 사용 불가</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-note">
+            <p>📄 <strong>서비스 이용과 관련된 자세한 내용은 <a href="terms_of_service.html" style="color: #007bff; text-decoration: underline;">이용약관</a>에서 확인하실 수 있습니다.</strong></p>
+        </div>
+
+        <div class="footer">
+            <p><strong>본 개인정보처리방침은 2025년 6월 11일부터 적용됩니다.</strong></p>
+            <p>© 2025 flutter_6 Zero-To-One Team. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
